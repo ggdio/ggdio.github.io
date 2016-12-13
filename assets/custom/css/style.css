@@ -1288,6 +1288,47 @@ button, input, select, textarea {
   background-position: center;
   background-size: cover; }
 
+.timeline-bg05 {
+  background: url("../images/timeline-5.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg05-01 {
+  background: url("../images/timeline-5-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg06 {
+  background: url("../images/timeline-6.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg06-01 {
+  background: url("../images/timeline-6-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg07 {
+  background: url("../images/timeline-7.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg07-01 {
+  background: url("../images/timeline-7-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg08 {
+  background: url("../images/timeline-8.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg08-01 {
+  background: url("../images/timeline-8-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+
 /* Counts Block */
 .bg-light .counts {
   color: #f2f2f2; }
