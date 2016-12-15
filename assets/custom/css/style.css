@@ -1328,6 +1328,26 @@ button, input, select, textarea {
   background-position: center;
   background-size: cover; }
 
+.timeline-bg09 {
+  background: url("../images/timeline-9.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg09-01 {
+  background: url("../images/timeline-9-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg10 {
+  background: url("../images/timeline-10.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg10-01 {
+  background: url("../images/timeline-10-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
 
 /* Counts Block */
 .bg-light .counts {
