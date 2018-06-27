@@ -2,8 +2,6 @@ ggdio.github.io
 ======
 **ggdio.github.io** is my personal website. You will most likely find it under [guilhermedio.com](http://guilhermedio.com).
 
-teste
-
 ## Domains
 * see [CNAME](https://github.com/ggdio/ggdio.github.io/blob/master/CNAME) file
 
