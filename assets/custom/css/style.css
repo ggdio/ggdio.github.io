@@ -757,7 +757,7 @@ button, input, select, textarea {
     color: #a7a7a7; }
     #top-navigation .ident .vc-photo {
       min-height: 360px;
-      background: url("../images/userpic01.jpg");
+      background: url("../images/userpic07.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -1347,6 +1347,17 @@ button, input, select, textarea {
   background: url("../images/timeline-10-01.jpg");
   background-position: center;
   background-size: cover; }
+
+.timeline-bg11 {
+  background: url("../images/timeline-11.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg11-01 {
+  background: url("../images/timeline-11-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
 
 
 /* Counts Block */
