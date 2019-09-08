@@ -1358,6 +1358,16 @@ button, input, select, textarea {
   background-position: center;
   background-size: cover; }
 
+.timeline-bg12 {
+  background: url("../images/timeline-12.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg12-01 {
+  background: url("../images/timeline-12-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
 
 
 /* Counts Block */

@@ -1,9 +1,6 @@
 ggdio.github.io
 ======
-**ggdio.github.io** is my personal website. You will most likely find it under [guilhermedio.com](http://guilhermedio.com).
-
-## Domains
-* see [CNAME](https://github.com/ggdio/ggdio.github.io/blob/master/CNAME) file
+**ggdio.github.io** is my personal website.
 
 ## Technology
 * BootStrap
@@ -17,8 +14,8 @@ ggdio.github.io
 
 ## Contact
 #### Developer/Projects spokesman
-* Homepage: [SourceSphere](http://sourcesphere.com.br)
-* e-mail: sourcesphere@gmail.com
-* LinkedIn: https://www.linkedin.com/in/guilhermedio
+* Homepage: [ggdio.github.io](https://ggdio.github.io)
+* e-mail: ggrdio@gmail.com
+* LinkedIn: https://www.linkedin.com/in/guilhermedio/en
 
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=ggdio&url=https://github.com/ggdio/ggdio.github.io&title=ggdio.github.io&language=&tags=github&category=software) 
