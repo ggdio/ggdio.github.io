@@ -1368,6 +1368,45 @@ button, input, select, textarea {
   background-position: center;
   background-size: cover; }
 
+.timeline-bg13 {
+  background: url("../images/timeline-13.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg13-01 {
+  background: url("../images/timeline-13-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg14 {
+  background: url("../images/timeline-14.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg14-01 {
+  background: url("../images/timeline-14-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg15 {
+  background: url("../images/timeline-15.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg15-01 {
+  background: url("../images/timeline-15-01.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg16 {
+  background: url("../images/timeline-16.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.timeline-bg16-01 {
+  background: url("../images/timeline-16-01.jpg");
+  background-position: center;
+  background-size: cover; }
 
 
 /* Counts Block */
