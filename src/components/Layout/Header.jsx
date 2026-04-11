@@ -20,12 +20,15 @@ export function Header() {
           <h1 className="text-5xl md:text-8xl font-bold mb-2 font-display tracking-tight text-white">
             {resumeData.name}
           </h1>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-display tracking-tight text-slate-300">
-            {resumeData.role.split(' | ').map((part, index) => (
-              <span key={index}>
-                {part}
-                {index < resumeData.role.split(' | ').length - 1 && (
-                  <span className="text-brand-light font-normal mx-2 opacity-50">|</span>
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 font-display tracking-tight text-slate-400 flex flex-wrap gap-y-2">
+            {resumeData.role.split(' | ').map((part, index, array) => (
+              <span key={index} className="flex items-center">
+                <span className="whitespace-nowrap">{part}</span>
+                {index < array.length - 1 && (
+                  <span className="hidden sm:inline text-brand-light font-normal mx-2 opacity-50">|</span>
+                )}
+                {index < array.length - 1 && (
+                  <span className="sm:hidden mx-2 opacity-0 w-0"></span> // Technical spacer for mobile flow
                 )}
               </span>
             ))}

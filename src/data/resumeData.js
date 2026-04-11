@@ -1,6 +1,6 @@
 export const resumeData = {
   name: "Guilherme Dio",
-  role: "Data & Analytics | Architecture | Leadership",
+  role: "Data & Analytics | Architecture | Software Engineering | Leadership",
   contact: {
     email: "ggrdio@gmail.com",
     phone: "+55 11 98321-6853",
