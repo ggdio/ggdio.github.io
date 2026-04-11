@@ -1,0 +1,343 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "company": "MadeiraMadeira",
+      "role": "Manager - Data Platform",
+      "duration": "Apr 2025 - Present (1 yr 1 mo)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Manager - Data Platform at MadeiraMadeira. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "Latam · Remote"
+    },
+    {
+      "id": 2,
+      "company": "Sourcesphere",
+      "role": "Data & AI | Software & Architecture | Consulting",
+      "duration": "Jan 2007 - Present (19 yrs 4 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Data & AI | Software & Architecture | Consulting at Sourcesphere. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "San Francisco, California, United States · External consultant for multiple companies and startups."
+    },
+    {
+      "id": 3,
+      "company": "Second Nature",
+      "role": "Lead Data Architect",
+      "duration": "Oct 2024 - Oct 2025 (1 yr 1 mo)",
+      "description": "Developed and implemented cloud-based data solutions on GCP, specializing in data warehousing, pipelines, and governance using BigQuery, Dataflow, and Dataplex.",
+      "location": "United Kingdom · Remote"
+    },
+    {
+      "id": 4,
+      "company": "Boston Scientific",
+      "role": "Lead Data Engineer",
+      "duration": "Nov 2023 - Oct 2024 (1 yr)",
+      "description": "Led global data analytics team for a biotechnology multinational. Tech stack: Snowflake, AWS, GCP, Python, Airflow.",
+      "location": "United States · Remote"
+    },
+    {
+      "id": 5,
+      "company": "Banco BRB",
+      "role": "Solutions Architect",
+      "duration": "Mar 2023 - Jul 2024 (1 yr 5 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Solutions Architect at Banco BRB. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "Brasília, Federal District, Brazil · Remote"
+    },
+    {
+      "id": 6,
+      "company": "Metatext.AI",
+      "role": "Technology Advisor",
+      "duration": "Jan 2024 - Jul 2024 (7 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Technology Advisor at Metatext.AI. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "Brazil · Remote"
+    },
+    {
+      "id": 7,
+      "company": "Carrefour",
+      "role": "Lead Data Architect",
+      "duration": "Nov 2022 - Mar 2023 (5 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Lead Data Architect at Carrefour. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil · Remote"
+    },
+    {
+      "id": 8,
+      "company": "Rox Partner",
+      "role": "Solutions Architect",
+      "duration": "Apr 2022 - Oct 2022 (7 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Solutions Architect at Rox Partner. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil · Remote"
+    },
+    {
+      "id": 9,
+      "company": "eMotion Studios",
+      "role": "Software Engineer",
+      "duration": "May 2022 - Sep 2022 (5 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at eMotion Studios. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "Sausalito, California, United States · Remote"
+    },
+    {
+      "id": 10,
+      "company": "will bank",
+      "role": "Data Engineer",
+      "duration": "Nov 2021 - Apr 2022 (6 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Data Engineer at will bank. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "Brazil · Remote"
+    },
+    {
+      "id": 11,
+      "company": "Boa Vista",
+      "role": "Data Engineer",
+      "duration": "Mar 2020 - Nov 2021 (1 yr 9 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Data Engineer at Boa Vista. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil · Remote"
+    },
+    {
+      "id": 12,
+      "company": "SuperSim",
+      "role": "Software Engineer",
+      "duration": "Jul 2019 - Feb 2020 (8 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at SuperSim. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil · Remote"
+    },
+    {
+      "id": 13,
+      "company": "Santander Brasil",
+      "role": "Software Engineer",
+      "duration": "Jul 2016 - Jul 2019 (3 yrs 1 mo)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Santander Brasil. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 14,
+      "company": "Inmetrics",
+      "role": "Software Engineer",
+      "duration": "Jul 2016 - Dec 2016 (6 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Inmetrics. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 15,
+      "company": "Plusoft",
+      "role": "Tech Lead",
+      "duration": "Jul 2014 - Jul 2016 (2 yrs 1 mo)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Tech Lead at Plusoft. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 16,
+      "company": "UniCorp Informática Industrial",
+      "role": "Systems Architect",
+      "duration": "Sep 2013 - Aug 2014 (1 yr)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Systems Architect at UniCorp Informática Industrial. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 17,
+      "company": "Plusoft",
+      "role": "Software Engineer",
+      "duration": "Nov 2012 - Sep 2013 (11 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Plusoft. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 18,
+      "company": "Programadores Java",
+      "role": "Software Engineer",
+      "duration": "Jan 2012 - Dec 2012 (1 yr)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Programadores Java. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 19,
+      "company": "INSIDE NETWORKS LTD",
+      "role": "Software Engineer",
+      "duration": "Jan 2009 - Dec 2011 (3 yrs)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at INSIDE NETWORKS LTD. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 20,
+      "company": "TIM Brasil",
+      "role": "Software Engineer",
+      "duration": "Jun 2011 - Dec 2011 (7 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at TIM Brasil. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    },
+    {
+      "id": 21,
+      "company": "H2M Soluções",
+      "role": "Software Engineer",
+      "duration": "Dec 2007 - Jan 2009 (1 yr 2 mos)",
+      "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at H2M Soluções. Focused on driving architectural excellence and engineering best practices within the team.",
+      "location": "São Paulo, Brazil"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Monoliths Disguised as Micro-Services",
+      "excerpt": "These days, I've been thinking about distributed monolith systems disguised as microservices (the \"silver bullet\" solution from nowadays).",
+      "thumbnail": "/images/articles/monolith.png",
+      "url": "https://www.linkedin.com/pulse/monoliths-disguised-micro-services-guilherme-dio/",
+      "tags": [
+        "#Microservices",
+        "#Architecture",
+        "#DistributedSystems"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Microservices Architecture: Introduction",
+      "excerpt": "Microservices architecture, or simply microservices, has become very popular in the last few years. I will be writing about microservices on the next articles, and for start I'd like to introduce the concept and present it's main characteristics.",
+      "thumbnail": "/images/articles/microservices.png",
+      "url": "https://www.linkedin.com/pulse/microservices-architecture-introduction-guilherme-dio/",
+      "tags": [
+        "#Microservices",
+        "#Architecture",
+        "#Introduction"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Upgrading Neo4J: v2 to v3",
+      "excerpt": "A few days ago I had to upgrade a Neo4j environment from v2.2.3 to v3.1.1, and as I haven't found any solid material on the internet about version migration, I tought it would be useful to publish this short tutorial in order to help others who might find some trouble while upgrading the datastore.",
+      "thumbnail": "/images/articles/neo4j.png",
+      "url": "https://www.linkedin.com/pulse/upgrading-neo4j-v2xx-v3xx-guilherme-dio/",
+      "tags": [
+        "#Neo4j",
+        "#Database",
+        "#Migration"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Host your static website on Github for free",
+      "excerpt": "Github( https://github.com ) is a great social coding platform, based on git-scm, with a clean and fluid interface and a lot of useful features for those who need a cloud based source versioning.",
+      "thumbnail": "/images/articles/github.png",
+      "url": "https://www.linkedin.com/pulse/host-your-static-website-github-free-guilherme-dio/",
+      "tags": [
+        "#Github",
+        "#StaticHosting",
+        "#WebDevelopment"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": 1,
+      "name": "Raphael Barbosa",
+      "role": "Engineering Manager @ MadeiraMadeira",
+      "feedback": "Excellent professional, always seeking the best technical solution for the business. Great sense of leadership and commitment to the team.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH17mY_w2_Q0A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 2,
+      "name": "Bruno Amaral",
+      "role": "Data Engineer @ Itaú",
+      "feedback": "Guilherme is a great professional, with vast technical knowledge and always willing to help and share knowledge with the team.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 3,
+      "name": "Marcos Teixeira",
+      "role": "CTO @ Metatext",
+      "feedback": "Guilherme is a high-level professional, with an impressive ability to solve complex problems and a very strong technical background.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 4,
+      "name": "Lukercio Lopes",
+      "role": "Tech Lead @ Carrefour",
+      "feedback": "Guilherme is an excellent professional, very technical and always up to date with new technologies. He is a key person in any team.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 5,
+      "name": "Thiago Ribeiro",
+      "role": "Software Architect @ Banco BRB",
+      "feedback": "Guilherme is a very good professional, with a great vision of architecture and a special care for project quality.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 6,
+      "name": "Paulo Cardoso",
+      "role": "Solutions Architect @ Rox Partner",
+      "feedback": "Guilherme is a great professional, with excellent communication skills and extraordinary technical capacity.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 7,
+      "name": "Vinicius Peracini",
+      "role": "Lead Engineer @ will bank",
+      "feedback": "Guilherme is an excellent engineer, with a very high technical level and a great ability to deliver results under pressure.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 8,
+      "name": "Mathias Brem Garcia",
+      "role": "Data Engineer @ Boa Vista",
+      "feedback": "Extremely skilled professional, with a broad vision of data and a great technical capacity to implement innovative solutions.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 9,
+      "name": "Thiago Ribeiro",
+      "role": "Tech Lead @ SuperSim",
+      "feedback": "Guilherme is a great engineer, very committed to the success of the project and the team. His technical level is exceptional.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 10,
+      "name": "Lincoln Amorim",
+      "role": "Engineering Manager @ Santander",
+      "feedback": "High quality professional, with a very solid technical background and a great deal of proactivity in solving problems.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 11,
+      "name": "Felipe Gebara",
+      "role": "Tech Lead @ Santander",
+      "feedback": "Guilherme is very dedicated and professional, always looking to deliver the best result with the highest quality possible.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 12,
+      "name": "Lucas Leite",
+      "role": "Tech Lead @ Inmetrics",
+      "feedback": "Great professional, with a lot of potential and a very strong technical background. Always committed to the team's objectives.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 13,
+      "name": "Hermes Waldemarin Neto",
+      "role": "Principal Backend Software Engineer | Fractional CTO",
+      "feedback": "O Guilherme é um profissional muito talentoso, antenado e está sempre aberto a ajudar. Gosta de aprender coisas novas, sempre trás novas ideias e é comprometido com a equipe que está trabalhando. Se destacou em todos os times que trabalhou aqui na Empresa.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQES8J-Yf7q9JQ/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 14,
+      "name": "Felipe Takano",
+      "role": "Consultor SAP SD NFe | S/4Hana | SAP Retail",
+      "feedback": "Guilherme foi determinado, pró ativo, dinâmico, e comprometido com seu trabalho. Buscava sempre outras fontes de experiências para atingir melhores resultados.Com essa vivência, adquiriu sólidos conhecimentos para se tornar um profissional competente.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQF_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 15,
+      "name": "Alan Cezar",
+      "role": "Principal Software Engineer",
+      "feedback": "O Guilherme é um excelente profissional que buscando sempre aprender mais estando em constante evolução técnica e profissional. Faz as coisas com muito apreço, tem um ótimo senso crítico para questões técnicas e gosta de compartilhar seus conhecimentos e experiência com os demais colegas.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQE_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 16,
+      "name": "Nilson Saito",
+      "role": "Professor",
+      "feedback": "O Guilherme é um rapaz muito dedicado, esforçado e inteligente. Ótimo para trabalhos individuais e de pesquisas.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQE_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    },
+    {
+      "id": 17,
+      "name": "Raphael Caldeirão",
+      "role": "Product Manager | Data-Driven | Segurança da Informação",
+      "feedback": "Profissional extremamente comprometido com suas atividades. Todas as entregas com muita qualidade.",
+      "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQE_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
+    }
+  ]
+}
