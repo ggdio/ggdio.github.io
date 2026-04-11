@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Download } from 'lucide-react';
+import { Download, Quote } from 'lucide-react';
 import { resumeData } from '../../data/resumeData';
 
 export function Header() {
@@ -33,9 +33,13 @@ export function Header() {
               </span>
             ))}
           </h2>
-          <p className="text-xl md:text-2xl text-slate-400 leading-relaxed mb-8">
-            {resumeData.about.split('. ')[0]}. {resumeData.about.split('. ')[1]}.
-          </p>
+          
+          <blockquote className="relative my-10 group">
+            <Quote className="absolute -top-10 -left-8 w-16 h-16 text-brand/10 group-hover:text-brand/20 transition-colors pointer-events-none" />
+            <p className="text-xl md:text-2xl text-slate-400 leading-relaxed italic font-light relative z-10">
+              {resumeData.about}
+            </p>
+          </blockquote>
           <div className="flex gap-4">
             <a 
               href="/resume.pdf" 
