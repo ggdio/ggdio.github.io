@@ -3,26 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
 
-const translateDuration = (duration, lang) => {
-  if (!duration || lang !== 'pt') return duration;
-  return duration
-    .replace(/\bPresent\b/g, 'Presente')
-    .replace(/\byrs\b/g, 'anos')
-    .replace(/\byr\b/g, 'ano')
-    .replace(/\bmos\b/g, 'meses')
-    .replace(/\bmo\b/g, 'mês')
-    .replace(/\bFeb\b/g, 'Fev')
-    .replace(/\bApr\b/g, 'Abr')
-    .replace(/\bMay\b/g, 'Mai')
-    .replace(/\bAug\b/g, 'Ago')
-    .replace(/\bSep\b/g, 'Set')
-    .replace(/\bOct\b/g, 'Out')
-    .replace(/\bDec\b/g, 'Dez');
-};
+export function CompactExperienceCard({ experience, isDefaultExpanded = false }) {
+  const [isExpanded, setIsExpanded] = useState(isDefaultExpanded);
+  const { t } = useLanguage();
 
-export function CompactExperienceCard({ experience }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const { language } = useLanguage();
+  const getTranslatedDuration = (duration) => {
+    if (!duration || !t.date) return duration;
+    let translated = duration;
+    Object.entries(t.date).forEach(([key, value]) => {
+      translated = translated.replace(new RegExp(`\\b${key}\\b`, 'g'), value);
+    });
+    return translated;
+  };
 
   return (
     <div className="py-2 border-b border-app-border last:border-0 group relative">
@@ -58,7 +50,7 @@ export function CompactExperienceCard({ experience }) {
             </div>
           </div>
           <div className="shrink-0 text-left md:text-right pl-7 md:pl-0">
-            <span className="text-app-text-muted">{translateDuration(experience.duration || experience.period, language)}</span>
+            <span className="text-app-text-muted">{getTranslatedDuration(experience.duration || experience.period)}</span>
           </div>
         </div>
       </button>

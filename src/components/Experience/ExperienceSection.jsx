@@ -81,7 +81,7 @@ export function ExperienceSection() {
           >
             <div className="flex flex-col">
               {fullHistory.map((exp, index) => (
-                <CompactExperienceCard key={index} experience={exp} />
+                <CompactExperienceCard key={index} experience={exp} isDefaultExpanded={index === 0} />
               ))}
             </div>
           </motion.div>
