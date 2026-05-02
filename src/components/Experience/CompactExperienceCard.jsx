@@ -1,9 +1,28 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import { useLanguage } from '../../hooks/useLanguage';
+
+const translateDuration = (duration, lang) => {
+  if (!duration || lang !== 'pt') return duration;
+  return duration
+    .replace(/\bPresent\b/g, 'Presente')
+    .replace(/\byrs\b/g, 'anos')
+    .replace(/\byr\b/g, 'ano')
+    .replace(/\bmos\b/g, 'meses')
+    .replace(/\bmo\b/g, 'mês')
+    .replace(/\bFeb\b/g, 'Fev')
+    .replace(/\bApr\b/g, 'Abr')
+    .replace(/\bMay\b/g, 'Mai')
+    .replace(/\bAug\b/g, 'Ago')
+    .replace(/\bSep\b/g, 'Set')
+    .replace(/\bOct\b/g, 'Out')
+    .replace(/\bDec\b/g, 'Dez');
+};
 
 export function CompactExperienceCard({ experience }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { language } = useLanguage();
 
   return (
     <div className="py-2 border-b border-app-border last:border-0 group relative">
@@ -39,7 +58,7 @@ export function CompactExperienceCard({ experience }) {
             </div>
           </div>
           <div className="shrink-0 text-left md:text-right pl-7 md:pl-0">
-            <span className="text-app-text-muted">{experience.duration || experience.period}</span>
+            <span className="text-app-text-muted">{translateDuration(experience.duration || experience.period, language)}</span>
           </div>
         </div>
       </button>
