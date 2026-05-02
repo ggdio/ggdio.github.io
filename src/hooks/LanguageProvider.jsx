@@ -6,7 +6,10 @@ import { pt } from '../i18n/pt';
 const translations = { en, pt };
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(() => {
+    const lang = (navigator.languages?.[0] ?? navigator.language ?? '').toLowerCase();
+    return lang.startsWith('pt') ? 'pt' : 'en';
+  });
   const t = translations[language];
 
   return (
