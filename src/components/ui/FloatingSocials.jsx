@@ -64,12 +64,12 @@ export function FloatingSocials() {
           href={social.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-3 glass rounded-full text-slate-400 hover:text-white hover:bg-[#0A66C2]/20 hover:scale-110 hover:shadow-[0_0_15px_rgba(10,102,194,0.5)] transition-all duration-300 group relative"
+          className="p-3 glass rounded-full text-app-text-muted hover:text-app-text hover:bg-[#0A66C2]/20 hover:scale-110 hover:shadow-[0_0_15px_rgba(10,102,194,0.5)] transition-all duration-300 group relative"
         >
           <social.icon size={20} />
           
           {/* Tooltip */}
-          <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-2 py-1 bg-black/80 text-xs text-white rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-white/10">
+          <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-2 py-1 bg-app-bg/80 text-xs text-app-text rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-app-border">
             {social.name}
           </span>
         </a>

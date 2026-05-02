@@ -14,7 +14,7 @@ export function ExperienceCard({ experience, index }) {
       <div className="relative z-10">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
           <div>
-            <h3 className="text-2xl font-display font-semibold text-white mb-1">
+            <h3 className="text-2xl font-display font-semibold text-app-text mb-1">
               {experience.role}
             </h3>
             <p className="text-lg text-brand-light font-medium">
@@ -22,14 +22,14 @@ export function ExperienceCard({ experience, index }) {
             </p>
           </div>
           <div className="mt-2 md:mt-0 text-left md:text-right">
-            <span className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-slate-300 mb-2">
+            <span className="inline-block px-3 py-1 rounded-full bg-app-glass border border-app-border text-sm text-app-text-muted mb-2">
               {experience.period}
             </span>
-            <p className="text-sm text-slate-500">{experience.location}</p>
+            <p className="text-sm text-app-text-muted/60">{experience.location}</p>
           </div>
         </div>
         
-        <p className="text-slate-400 leading-relaxed">
+        <p className="text-app-text-muted leading-relaxed">
           {experience.description}
         </p>
       </div>

@@ -1,17 +1,19 @@
 import linkedinData from '../../data/linkedinData.json';
 import { RecommendationCard } from './RecommendationCard';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function TestimonialWall() {
   const recommendations = linkedinData.recommendations || [];
+  const { t } = useLanguage();
 
   return (
     <section className="py-20 relative" id="testimonials">
       <div className="mb-12">
-        <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4">
-          Professional <span className="text-gradient">Endorsements</span>
+        <h2 className="text-3xl md:text-5xl font-display font-bold text-app-text mb-4">
+          {t.endorsements.title} <span className="text-gradient">{t.endorsements.titleHighlight}</span>
         </h2>
-        <p className="text-slate-400 text-lg max-w-2xl">
-          Reflections and feedback from leaders, peers, and clients throughout my career journey.
+        <p className="text-app-text-muted text-lg max-w-2xl">
+          {t.endorsements.subtitle}
         </p>
       </div>
 

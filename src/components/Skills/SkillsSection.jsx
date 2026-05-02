@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Cloud, Database, Cpu, Code, Users, HardDrive } from 'lucide-react';
 import { resumeData } from '../../data/resumeData';
 import { Tag } from '../ui/Tag';
+import { useLanguage } from '../../hooks/useLanguage';
 
 const iconMap = {
   leadership: <Users className="stroke-brand w-8 h-8" />,
@@ -12,32 +13,24 @@ const iconMap = {
   software: <Code className="stroke-brand w-8 h-8" />
 };
 
-const titleMap = {
-  leadership: "Leadership & Strategy",
-  cloud: "Cloud",
-  data: "Data & Analytics",
-  architecture: "Architecture",
-  storage: "Data Storage",
-  software: "Software Development"
-};
-
 export function SkillsSection() {
   const { skills } = resumeData;
+  const { t } = useLanguage();
 
   return (
     <section className="relative py-24" id="skills">
       <div className="container mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
           <h2 className="mb-4 text-4xl font-bold md:text-5xl font-display">
-            Core <span className="text-gradient">Competencies</span>
+            {t.skills.title} <span className="text-gradient">{t.skills.titleHighlight}</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-slate-400">
-            A comprehensive overview of my technical expertise, spanning from infrastructure and data processing to software engineering and architectural design.
+          <p className="max-w-2xl mx-auto text-lg text-app-text-muted">
+            {t.skills.subtitle}
           </p>
         </motion.div>
 
@@ -55,8 +48,8 @@ export function SkillsSection() {
                 {iconMap[category]}
               </div>
               <div className="flex items-center gap-4 mb-6">
-                 {iconMap[category]}
-                 <h3 className="text-2xl font-display font-semibold">{titleMap[category]}</h3>
+                {iconMap[category]}
+                <h3 className="text-2xl font-display font-semibold">{t.skills.categories[category]}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {items.map(skill => (

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,37 +7,61 @@
   --color-bg-dark: #0B0B0B;
   --color-accent-violet: #8B5CF6;
   
+  --color-app-bg: var(--bg-primary);
+  --color-app-text: var(--text-primary);
+  --color-app-text-muted: var(--text-muted);
+  --color-app-border: var(--border-primary);
+  --color-app-glass: var(--glass-bg);
+
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
-
   :root {
+    --bg-primary: #0B0B0B;
+    --text-primary: #ffffff;
+    --text-muted: #cbd5e1; /* slate-300 */
+    --border-primary: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(0, 0, 0, 0.4);
     color-scheme: dark;
   }
 
+  :root.light {
+    --bg-primary: #f8fafc; /* slate-50 */
+    --text-primary: #0f172a; /* slate-900 */
+    --text-muted: #475569; /* slate-600 */
+    --border-primary: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.4);
+    color-scheme: light;
+  }
+
   body {
-    @apply bg-bg-dark text-slate-300 font-sans selection:bg-brand/30 antialiased;
+    @apply bg-app-bg text-app-text-muted font-sans selection:bg-brand/30 antialiased;
     margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   h1, h2, h3, h4, .font-display {
-    @apply font-display text-white font-semibold;
+    @apply font-display text-app-text font-semibold;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-black/40 backdrop-blur-xl border border-white/10;
+    @apply bg-app-glass backdrop-blur-xl border border-app-border;
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-white via-slate-300 to-brand bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-app-text via-app-text-muted to-brand bg-clip-text text-transparent;
   }
 
+  /* Support for rounded gradient borders using multiple backgrounds */
   .border-gradient {
-    border-image: linear-gradient(to right, theme(--color-brand), theme(--color-accent-violet)) 1;
+    border: 1px solid transparent;
+    background-image: linear-gradient(var(--bg-primary), var(--bg-primary)), 
+                      linear-gradient(to right, var(--color-brand), var(--color-accent-violet));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
   }
 }

@@ -1,0 +1,44 @@
+export const en = {
+  nav: {
+    experience: 'Experience',
+    skills: 'Skills',
+    endorsements: 'Endorsements',
+    insights: 'Insights',
+  },
+  header: {
+    badge: 'Portfolio',
+    downloadResume: 'Download Resume',
+  },
+  experience: {
+    title: 'Professional',
+    titleHighlight: 'Experience',
+    highlightsSubtitle: 'Highlights from my career leading data, architecture, and technology teams across global enterprises.',
+    fullSubtitle: 'A comprehensive timeline of my roles and contributions over the past 19+ years.',
+    highlights: 'Highlights',
+    fullTimeline: 'Full Timeline',
+  },
+  skills: {
+    title: 'Core',
+    titleHighlight: 'Competencies',
+    subtitle: 'A comprehensive overview of my technical expertise, spanning from infrastructure and data processing to software engineering and architectural design.',
+    categories: {
+      leadership: 'Leadership & Strategy',
+      cloud: 'Cloud',
+      data: 'Data & Analytics',
+      architecture: 'Architecture',
+      storage: 'Data Storage',
+      software: 'Software Development',
+    },
+  },
+  endorsements: {
+    title: 'Professional',
+    titleHighlight: 'Endorsements',
+    subtitle: 'Reflections and feedback from leaders, peers, and clients throughout my career journey.',
+  },
+  knowledge: {
+    title: 'The',
+    titleHighlight: 'Knowledge Hub',
+    subtitle: 'Latest insights, technical deep-dives, and architectural perspectives directly from my LinkedIn publication.',
+  },
+  footer: 'All rights reserved.',
+};
