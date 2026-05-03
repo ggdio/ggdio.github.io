@@ -16,6 +16,16 @@ export const resumeData = {
     storage: ["BigTable", "Spanner", "Cloud Storage", "S3", "SQL Server", "MySQL", "Cassandra", "MongoDB", "Redis", "ElasticSearch"],
     software: ["Java", "Scala", "Kotlin", "Python", "SQL", "Javascript"]
   },
+  github: {
+    username: "ggdio",
+    stats: { repos: 71, yearsActive: "19+" },
+    pinned: [
+      { name: "perceptya", desc: "Perceptya Landing Page — a modern web presence for a tech product.", lang: "JavaScript", color: "#f1e05a", url: "https://github.com/ggdio/perceptya" },
+      { name: "jldap", desc: "Embeddable Java LDAP Server for testing and development.", lang: "Java", color: "#b07219", url: "https://github.com/ggdio/jldap" },
+      { name: "consul-microservices-simulator", desc: "Microservices simulator for consul.io registering/discovering.", lang: "Java", color: "#b07219", url: "https://github.com/ggdio/consul-microservices-simulator" },
+      { name: "SteamOS-Waydroid-Installer", desc: "Script to easily install Android via Waydroid on Steam Deck.", lang: "Shell", color: "#89e051", url: "https://github.com/ggdio/SteamOS-Waydroid-Installer" }
+    ]
+  },
   en: {
     role: "Data & Analytics | Architecture | Software Engineering | Leadership",
     about: "I am a multidisciplinary leader, shaped and motivated by people and technology. With more than 18 years of experience in the area, I have gone through engineering, operation, architecture and business, consolidating essential experiences that help me today in decision making, whether tactical or strategic. Specialized in Architecture, Software Engineering, Big Data and Analytics.",

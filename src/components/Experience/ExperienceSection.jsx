@@ -4,89 +4,103 @@ import { resumeData } from '../../data/resumeData';
 import linkedinData from '../../data/linkedinData.json';
 import { ExperienceCard } from './ExperienceCard';
 import { CompactExperienceCard } from './CompactExperienceCard';
+import { SectionHeader } from '../ui/SectionHeader';
 import { useLanguage } from '../../hooks/useLanguage';
 
 export function ExperienceSection() {
   const [activeTab, setActiveTab] = useState('highlights');
   const { language, t } = useLanguage();
   const { experience } = resumeData[language];
-
   const fullHistory = linkedinData.experiences || [];
 
   return (
-    <section className="py-20 relative" id="experience">
-      <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
-        <div>
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-app-text mb-4">
-            {t.experience.title} <span className="text-gradient">{t.experience.titleHighlight}</span>
-          </h2>
-          <p className="text-app-text-muted text-lg max-w-2xl">
-            {activeTab === 'highlights'
+    <section id="experience" className="relative py-24" style={{ background: 'var(--bg-primary)' }}>
+      <div className="absolute right-[-100px] top-1/2 -translate-y-1/2 w-[400px] h-[400px] pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.07) 0%, transparent 65%)' }}
+      />
+      <div className="relative z-[1] max-w-[1120px] mx-auto px-6 md:px-10">
+        <SectionHeader
+          eyebrow={t.experience.eyebrow}
+          title={t.experience.title}
+          highlight={t.experience.titleHighlight}
+          subtitle={
+            activeTab === 'highlights'
               ? t.experience.highlightsSubtitle
-              : t.experience.fullSubtitle}
-          </p>
+              : t.experience.fullSubtitle
+          }
+        />
+
+        <div className="flex p-1 mb-10 rounded-full border border-app-border bg-app-glass w-fit">
+          {[
+            { id: 'highlights', label: t.experience.highlights },
+            { id: 'full', label: t.experience.fullTimeline },
+          ].map(tab => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`px-5 py-1.5 rounded-full text-[13px] font-medium transition-all ${
+                activeTab === tab.id
+                  ? 'bg-brand text-white shadow-[0_2px_12px_rgba(10,102,194,0.4)]'
+                  : 'text-app-text-dim hover:text-app-text'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
         </div>
 
-        {/* Tab Selection */}
-        <div className="flex items-center p-1 bg-app-glass rounded-full border border-app-border w-fit shrink-0">
-          <button
-            onClick={() => setActiveTab('highlights')}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
-              activeTab === 'highlights'
-                ? 'bg-brand text-app-text shadow-lg'
-                : 'text-app-text-muted hover:text-app-text'
-            }`}
-          >
-            {t.experience.highlights}
-          </button>
-          <button
-            onClick={() => setActiveTab('full')}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
-              activeTab === 'full'
-                ? 'bg-brand text-app-text shadow-lg'
-                : 'text-app-text-muted hover:text-app-text'
-            }`}
-          >
-            {t.experience.fullTimeline}
-          </button>
-        </div>
-      </div>
-
-      <AnimatePresence mode="wait">
-        {activeTab === 'highlights' ? (
-          <motion.div
-            key="highlights"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.3 }}
-            className="space-y-6 relative before:absolute before:inset-y-0 before:left-[1rem] md:before:left-0 before:w-px before:bg-gradient-to-b before:from-brand/50 before:via-accent-violet/30 before:to-transparent pl-8 md:pl-10"
-          >
-            {experience.map((exp, index) => (
-              <div key={index} className="relative">
-                {/* Timeline dot */}
-                <div className="absolute -left-10 md:-left-[2.85rem] top-8 w-4 h-4 rounded-full bg-brand border-4 border-app-bg z-20" />
-                <ExperienceCard experience={exp} index={index} />
+        <AnimatePresence mode="wait">
+          {activeTab === 'highlights' ? (
+            <motion.div
+              key="highlights"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="relative pl-8"
+            >
+              <div
+                className="absolute left-[5px] top-0 bottom-0 w-[2px]"
+                style={{
+                  background:
+                    'linear-gradient(to bottom, var(--color-brand) 0%, rgba(139,92,246,0.4) 60%, transparent 100%)',
+                }}
+              />
+              <div className="space-y-8">
+                {experience.map((exp, index) => (
+                  <div key={index} className="relative">
+                    <div
+                      className={`absolute -left-[31px] top-2 w-3 h-3 rounded-full z-10 ${
+                        index === 0 ? 'bg-brand' : 'bg-white/20'
+                      }`}
+                      style={{
+                        border: '2px solid var(--bg-primary)',
+                        boxShadow: index === 0 ? '0 0 0 3px rgba(10,102,194,0.2)' : 'none',
+                      }}
+                    />
+                    <ExperienceCard experience={exp} index={index} />
+                  </div>
+                ))}
               </div>
-            ))}
-          </motion.div>
-        ) : (
-          <motion.div
-            key="full-history"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.3 }}
-            className="glass rounded-2xl p-6 md:p-8"
-          >
-            <div className="flex flex-col">
-              {fullHistory.map((exp, index) => (
-                <CompactExperienceCard key={index} experience={exp} isDefaultExpanded={index === 0} />
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            </motion.div>
+          ) : (
+            <motion.div
+              key="full"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="glass rounded-[12px]"
+            >
+              <div className="flex flex-col">
+                {fullHistory.map((exp, index) => (
+                  <CompactExperienceCard key={index} experience={exp} isDefaultExpanded={index === 0} />
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </section>
   );
 }

@@ -4,29 +4,21 @@ export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="fixed top-6 right-6 z-50 flex items-center p-1 bg-app-glass rounded-full border border-app-border shadow-2xl backdrop-blur-sm">
-      <button
-        onClick={() => setLanguage('en')}
-        className={`px-3 py-1.5 rounded-full text-xs font-semibold tracking-wider transition-all ${
-          language === 'en'
-            ? 'bg-brand text-app-text shadow-lg'
-            : 'text-app-text-muted hover:text-app-text'
-        }`}
-        aria-label="Switch to English"
-      >
-        EN
-      </button>
-      <button
-        onClick={() => setLanguage('pt')}
-        className={`px-3 py-1.5 rounded-full text-xs font-semibold tracking-wider transition-all ${
-          language === 'pt'
-            ? 'bg-brand text-app-text shadow-lg'
-            : 'text-app-text-muted hover:text-app-text'
-        }`}
-        aria-label="Mudar para Português"
-      >
-        PT
-      </button>
+    <div className="flex items-center p-[3px] rounded-full border border-app-border bg-app-glass">
+      {['en', 'pt'].map(lng => (
+        <button
+          key={lng}
+          onClick={() => setLanguage(lng)}
+          className={`px-3 py-[3px] rounded-full text-[11px] font-semibold tracking-wider transition-all ${
+            language === lng
+              ? 'bg-brand text-white shadow'
+              : 'text-app-text-dim hover:text-app-text'
+          }`}
+          aria-label={lng === 'en' ? 'Switch to English' : 'Mudar para Português'}
+        >
+          {lng.toUpperCase()}
+        </button>
+      ))}
     </div>
   );
 }

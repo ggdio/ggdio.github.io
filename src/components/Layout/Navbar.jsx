@@ -1,92 +1,130 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { socialLinks } from '../ui/FloatingSocials';
 import { ThemeToggle } from '../ui/ThemeToggle';
+import { LanguageToggle } from '../ui/LanguageToggle';
 import { useLanguage } from '../../hooks/useLanguage';
+
+const SECTION_IDS = ['hero', 'experience', 'skills', 'github', 'testimonials', 'knowledge-hub'];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState('hero');
   const { t } = useLanguage();
 
   const links = [
-    { name: t.nav.experience, href: '#experience' },
-    { name: t.nav.skills, href: '#skills' },
-    { name: t.nav.endorsements, href: '#testimonials' },
-    { name: t.nav.insights, href: '#knowledge-hub' },
+    { name: t.nav.experience, href: '#experience', id: 'experience' },
+    { name: t.nav.skills, href: '#skills', id: 'skills' },
+    { name: t.nav.github, href: '#github', id: 'github' },
+    { name: t.nav.endorsements, href: '#testimonials', id: 'testimonials' },
+    { name: t.nav.insights, href: '#knowledge-hub', id: 'knowledge-hub' },
   ];
+
+  useEffect(() => {
+    const onScroll = () => {
+      let current = 'hero';
+      for (const id of SECTION_IDS) {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 80) current = id;
+      }
+      setActive(current);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
 
   return (
     <>
-      <div className={`fixed top-6 left-6 z-50 flex items-center gap-3 transition-opacity duration-300 ${isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-        <button 
-          onClick={() => setIsOpen(true)}
-          className="p-3 rounded-full glass text-app-text-muted hover:text-app-text transition-colors shadow-2xl"
-          aria-label="Open menu"
-        >
-          <Menu size={24} />
-        </button>
-        <ThemeToggle />
-      </div>
+      <header
+        className="fixed top-0 left-0 right-0 z-[100] h-14 flex items-center px-6 md:px-8 border-b border-app-border backdrop-blur-xl"
+        style={{ background: 'color-mix(in oklab, var(--bg-primary) 70%, transparent)' }}
+      >
+        <a href="#hero" className="font-display font-extrabold text-xl tracking-tight text-app-text mr-10">
+          GD<span className="text-brand">.</span>
+        </a>
+
+        <nav className="hidden lg:flex gap-1 flex-1">
+          {links.map(link => (
+            <a
+              key={link.id}
+              href={link.href}
+              className={`px-3.5 py-1.5 rounded-md text-[13px] font-normal transition-all ${
+                active === link.id
+                  ? 'text-brand-light bg-app-glass2'
+                  : 'text-app-text-dim hover:text-app-text hover:bg-app-glass2'
+              }`}
+            >
+              {link.name}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex-1 lg:flex-none" />
+
+        <div className="flex items-center gap-2">
+          <LanguageToggle />
+          <ThemeToggle />
+          <button
+            onClick={() => setIsOpen(true)}
+            className="lg:hidden w-9 h-9 rounded-lg border border-app-border bg-app-glass text-app-text-muted hover:bg-app-glass2 hover:text-app-text transition flex items-center justify-center"
+            aria-label="Open menu"
+          >
+            <Menu size={18} />
+          </button>
+        </div>
+      </header>
 
       <AnimatePresence>
         {isOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div 
+          <div className="fixed inset-0 z-[200] flex lg:hidden">
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-app-bg/60 backdrop-blur-sm z-50 cursor-pointer"
+              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             />
-
-            {/* Sidebar */}
-            <motion.div 
+            <motion.div
               initial={{ x: '-100%' }}
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
-              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 left-0 bottom-0 w-72 glass border-r border-app-border z-50 flex flex-col pt-20 px-8"
-              style={{ backgroundColor: 'var(--bg-primary)' }}
+              transition={{ type: 'tween', duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+              className="relative w-72 h-full p-7 flex flex-col gap-2 border-r border-app-border"
+              style={{ background: 'var(--bg-secondary)' }}
             >
-              <button 
-                onClick={() => setIsOpen(false)}
-                className="absolute top-6 left-6 p-3 rounded-full text-app-text-muted hover:text-app-text transition-colors hover:bg-app-text/5"
-              >
-                <X size={24} />
-              </button>
-
-              <div className="flex flex-col gap-6 mt-8">
-                {links.map(link => (
-                  <a 
-                    key={link.name} 
-                    href={link.href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-xl font-display font-medium text-app-text-muted hover:text-app-text transition-colors tracking-wide hover:translate-x-2 transform duration-200"
-                  >
-                    {link.name}
-                  </a>
-                ))}
+              <div className="flex items-center justify-between mb-6">
+                <span className="font-display text-xl font-extrabold text-app-text">
+                  GD<span className="text-brand">.</span>
+                </span>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="w-9 h-9 rounded-lg border border-app-border bg-app-glass text-app-text-muted hover:text-app-text flex items-center justify-center"
+                  aria-label="Close menu"
+                >
+                  <X size={18} />
+                </button>
               </div>
-
-              {/* Mobile Socials (bottom of Sidebar) */}
-              <div className="mt-auto pb-8 md:hidden flex justify-start gap-4">
-                {socialLinks.map(social => (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 glass rounded-full text-app-text-muted hover:text-app-text hover:bg-[#0A66C2]/20 hover:scale-110 transition-all duration-300"
-                    aria-label={social.name}
-                  >
-                    <social.icon size={20} />
-                  </a>
-                ))}
+              {links.map(link => (
+                <a
+                  key={link.id}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="px-3.5 py-3 rounded-lg font-display text-lg font-semibold text-app-text-muted hover:text-app-text hover:bg-app-glass2 transition"
+                >
+                  {link.name}
+                </a>
+              ))}
+              <div className="mt-auto pt-6 border-t border-app-border">
+                <LanguageToggle />
               </div>
             </motion.div>
-          </>
+          </div>
         )}
       </AnimatePresence>
     </>

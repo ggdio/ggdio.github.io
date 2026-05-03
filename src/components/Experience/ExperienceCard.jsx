@@ -1,38 +1,47 @@
 import { motion } from 'framer-motion';
 
+const TAGS_BY_INDEX = [
+  ['GCP', 'BigQuery', 'Data Mesh', 'Dataflow', 'Datastream'],
+  ['GCP', 'BigQuery', 'Dataflow', 'Dataplex'],
+  ['Snowflake', 'AWS', 'GCP', 'Airflow'],
+  ['Multi-cloud', '100+ team', 'AWS', 'GCP'],
+  ['Strategy', 'Architecture', 'Modernization'],
+  ['Hadoop', 'Spark', 'Kafka', 'Elasticsearch'],
+];
+
 export function ExperienceCard({ experience, index }) {
+  const isCurrent = index === 0;
+  const tags = TAGS_BY_INDEX[index] || [];
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="glass p-8 rounded-2xl relative group overflow-hidden"
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{ duration: 0.5, delay: index * 0.08 }}
+      className={`px-7 py-6 transition-all hover:border-brand/30 ${isCurrent ? 'card-grad' : 'glass rounded-[12px]'}`}
+      style={{ borderRadius: 'var(--radius-card)' }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-brand/10 to-accent-violet/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      
-      <div className="relative z-10">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
-          <div>
-            <h3 className="text-2xl font-display font-semibold text-app-text mb-1">
-              {experience.role}
-            </h3>
-            <p className="text-lg text-brand-light font-medium">
-              {experience.company}
-            </p>
-          </div>
-          <div className="mt-2 md:mt-0 text-left md:text-right">
-            <span className="inline-block px-3 py-1 rounded-full bg-app-glass border border-app-border text-sm text-app-text-muted mb-2">
-              {experience.period}
-            </span>
-            <p className="text-sm text-app-text-muted/60">{experience.location}</p>
-          </div>
-        </div>
-        
-        <p className="text-app-text-muted leading-relaxed">
-          {experience.description}
-        </p>
+      <div className="text-[11px] text-brand-light font-semibold tracking-wider mb-1.5 uppercase">
+        {experience.period}
       </div>
+      <div className="font-display text-xl font-bold text-app-text mb-1">
+        {experience.company}
+      </div>
+      <div className="text-[13px] text-app-text-muted mb-1">{experience.role}</div>
+      <div className="text-[11px] text-app-text-dim mb-3">{experience.location}</div>
+      <p className="text-sm text-app-text-muted leading-[1.7] mb-3.5">
+        {experience.description}
+      </p>
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {tags.map(tag => (
+            <span key={tag} className={isCurrent ? 'pill pill-blue' : 'pill pill-ghost'}>
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
     </motion.div>
   );
 }

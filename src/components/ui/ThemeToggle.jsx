@@ -7,10 +7,10 @@ export function ThemeToggle({ className = "" }) {
   return (
     <button
       onClick={toggleTheme}
-      className={`p-3 rounded-full glass text-app-text-muted hover:text-app-text transition-all duration-300 shadow-2xl hover:scale-110 active:scale-95 ${className}`}
+      className={`w-9 h-9 rounded-lg border border-app-border bg-app-glass text-app-text-muted hover:bg-app-glass2 hover:text-app-text transition flex items-center justify-center ${className}`}
       aria-label="Toggle theme"
     >
-      {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+      {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
     </button>
   );
 }

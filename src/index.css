@@ -1,67 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #0A66C2; /* LinkedIn Blue */
-  --color-brand-light: #0077B5;
-  --color-bg-dark: #0B0B0B;
+  --color-brand: #0A66C2;
+  --color-brand-light: #5aa8f0;
   --color-accent-violet: #8B5CF6;
-  
+  --color-accent-violet-light: #a78bfa;
+  --color-accent-green: #34d399;
+
   --color-app-bg: var(--bg-primary);
+  --color-app-bg2: var(--bg-secondary);
+  --color-app-bg3: var(--bg-tertiary);
   --color-app-text: var(--text-primary);
   --color-app-text-muted: var(--text-muted);
+  --color-app-text-dim: var(--text-dim);
   --color-app-border: var(--border-primary);
+  --color-app-border-strong: var(--border-strong);
   --color-app-glass: var(--glass-bg);
+  --color-app-glass2: var(--glass-bg-2);
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 12px;
+  --radius-btn: 8px;
 }
 
 @layer base {
   :root {
     --bg-primary: #0B0B0B;
-    --text-primary: #ffffff;
-    --text-muted: #cbd5e1; /* slate-300 */
-    --border-primary: rgba(255, 255, 255, 0.1);
-    --glass-bg: rgba(0, 0, 0, 0.4);
+    --bg-secondary: #111214;
+    --bg-tertiary: #17191c;
+    --text-primary: #f1f5f9;
+    --text-muted: #94a3b8;
+    --text-dim: rgba(255, 255, 255, 0.28);
+    --border-primary: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.14);
+    --glass-bg: rgba(255, 255, 255, 0.04);
+    --glass-bg-2: rgba(255, 255, 255, 0.07);
     color-scheme: dark;
   }
 
   :root.light {
-    --bg-primary: #f8fafc; /* slate-50 */
-    --text-primary: #0f172a; /* slate-900 */
-    --text-muted: #475569; /* slate-600 */
-    --border-primary: rgba(0, 0, 0, 0.1);
-    --glass-bg: rgba(255, 255, 255, 0.4);
+    --bg-primary: #f8fafc;
+    --bg-secondary: #f1f5f9;
+    --bg-tertiary: #e8edf2;
+    --text-primary: #0f172a;
+    --text-muted: #475569;
+    --text-dim: rgba(0, 0, 0, 0.35);
+    --border-primary: rgba(0, 0, 0, 0.08);
+    --border-strong: rgba(0, 0, 0, 0.14);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-bg-2: rgba(255, 255, 255, 0.85);
     color-scheme: light;
   }
+
+  html { scroll-behavior: smooth; }
 
   body {
     @apply bg-app-bg text-app-text-muted font-sans selection:bg-brand/30 antialiased;
     margin: 0;
+    line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   h1, h2, h3, h4, .font-display {
     @apply font-display text-app-text font-semibold;
   }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg-primary); }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 99px; }
+  :root.light ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+  :root.light ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-app-glass backdrop-blur-xl border border-app-border;
-  }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-app-text via-app-text-muted to-brand bg-clip-text text-transparent;
+    background: var(--glass-bg);
+    border: 1px solid var(--border-primary);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
 
-  /* Support for rounded gradient borders using multiple backgrounds */
-  .border-gradient {
+  .glass-strong {
+    background: var(--glass-bg-2);
+    border: 1px solid var(--border-strong);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, var(--text-primary) 0%, var(--text-muted) 55%, var(--color-brand) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .card-grad {
+    position: relative;
+    border-radius: var(--radius-card);
+    background: var(--bg-secondary);
     border: 1px solid transparent;
-    background-image: linear-gradient(var(--bg-primary), var(--bg-primary)), 
-                      linear-gradient(to right, var(--color-brand), var(--color-accent-violet));
+    background-image: linear-gradient(var(--bg-secondary), var(--bg-secondary)),
+                      linear-gradient(135deg, rgba(10,102,194,0.5), rgba(139,92,246,0.5));
     background-origin: border-box;
     background-clip: padding-box, border-box;
+  }
+
+  /* Pills */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: default;
+  }
+  .pill-ghost {
+    background: var(--glass-bg);
+    border: 1px solid var(--border-primary);
+    color: var(--text-muted);
+  }
+  .pill-blue {
+    background: rgba(10,102,194,0.12);
+    border: 1px solid rgba(10,102,194,0.3);
+    color: var(--color-brand-light);
+  }
+  .pill-violet {
+    background: rgba(139,92,246,0.12);
+    border: 1px solid rgba(139,92,246,0.3);
+    color: var(--color-accent-violet-light);
+  }
+  .pill-green {
+    background: rgba(52,211,153,0.12);
+    border: 1px solid rgba(52,211,153,0.3);
+    color: var(--color-accent-green);
   }
 }
