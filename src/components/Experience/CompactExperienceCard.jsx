@@ -36,7 +36,7 @@ export function CompactExperienceCard({ experience, isDefaultExpanded = false })
             </motion.div>
             <div className="min-w-0">
               <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                <span className="text-[14px] font-display font-semibold text-app-text group-hover/card:text-brand-light transition-colors truncate">
+                <span className="text-[14px] font-display font-semibold text-app-text group-hover/card:text-brand-light transition-colors">
                   {experience.title || experience.role}
                 </span>
                 {location && (

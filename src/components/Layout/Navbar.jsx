@@ -42,7 +42,7 @@ export function Navbar() {
   return (
     <>
       <header
-        className="fixed top-0 left-0 right-0 z-[100] h-14 flex items-center px-6 md:px-8 border-b border-app-border backdrop-blur-xl"
+        className="fixed top-0 left-0 right-0 z-[100] h-14 flex items-center px-4 md:px-8 border-b border-app-border backdrop-blur-xl"
         style={{ background: 'color-mix(in oklab, var(--bg-primary) 70%, transparent)' }}
       >
         <a href="#hero" className="font-display font-extrabold text-xl tracking-tight text-app-text mr-10">
@@ -67,12 +67,14 @@ export function Navbar() {
 
         <div className="flex-1 lg:flex-none" />
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
+          <div className="hidden lg:flex items-center gap-2">
+            <ThemeToggle />
+          </div>
           <LanguageToggle />
-          <ThemeToggle />
           <button
             onClick={() => setIsOpen(true)}
-            className="lg:hidden w-9 h-9 rounded-lg border border-app-border bg-app-glass text-app-text-muted hover:bg-app-glass2 hover:text-app-text transition flex items-center justify-center"
+            className="lg:hidden w-9 h-9 rounded-lg border border-app-border bg-app-glass2 text-app-text hover:bg-brand/20 hover:text-brand-light transition flex items-center justify-center"
             aria-label="Open menu"
           >
             <Menu size={18} />
@@ -120,8 +122,9 @@ export function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <div className="mt-auto pt-6 border-t border-app-border">
+              <div className="mt-auto pt-6 border-t border-app-border flex items-center justify-between">
                 <LanguageToggle />
+                <ThemeToggle />
               </div>
             </motion.div>
           </div>
