@@ -192,6 +192,18 @@
   ],
   "articles": [
     {
+      "id": 5,
+      "title": "Reality Check: Your AI Strategy is Only as Good as Your Infrastructure",
+      "excerpt": "Every second post on my feed right now is a non-stop stream of AI, LLMs, autonomous agents, Claude, Gemini—the list goes on. It’s the shiny new toy, the board-level priority, and the \"future of the business.\"",
+      "thumbnail": "/images/articles/ai_strategy.png",
+      "url": "https://www.linkedin.com/pulse/reality-check-your-ai-strategy-only-good-guilherme-dio-nft9f/",
+      "tags": [
+        "#AI",
+        "#DataEngineering",
+        "#Architecture"
+      ]
+    },
+    {
       "id": 1,
       "title": "Monoliths Disguised as Micro-Services",
       "excerpt": "These days, I've been thinking about distributed monolith systems disguised as microservices (the \"silver bullet\" solution from nowadays).",
