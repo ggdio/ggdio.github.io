@@ -4,7 +4,8 @@
       "id": 1,
       "company": "MadeiraMadeira",
       "role": "Manager - Data Platform",
-      "duration": "Apr 2025 - Present (1 yr 1 mo)",
+      "startDate": "2025-04",
+      "endDate": null,
       "description": "Led technical initiatives and delivered high-impact solutions as Manager - Data Platform at MadeiraMadeira. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "Latam · Remote"
     },
@@ -12,7 +13,8 @@
       "id": 2,
       "company": "Sourcesphere",
       "role": "Data & AI | Software & Architecture | Consulting",
-      "duration": "Jan 2007 - Present (19 yrs 4 mos)",
+      "startDate": "2007-01",
+      "endDate": null,
       "description": "Led technical initiatives and delivered high-impact solutions as Data & AI | Software & Architecture | Consulting at Sourcesphere. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "San Francisco, California, United States · External consultant for multiple companies and startups."
     },
@@ -20,7 +22,8 @@
       "id": 3,
       "company": "Second Nature",
       "role": "Lead Data Architect",
-      "duration": "Oct 2024 - Oct 2025 (1 yr 1 mo)",
+      "startDate": "2024-10",
+      "endDate": "2025-10",
       "description": "Developed and implemented cloud-based data solutions on GCP, specializing in data warehousing, pipelines, and governance using BigQuery, Dataflow, and Dataplex.",
       "location": "United Kingdom · Remote"
     },
@@ -28,7 +31,8 @@
       "id": 4,
       "company": "Boston Scientific",
       "role": "Lead Data Engineer",
-      "duration": "Nov 2023 - Oct 2024 (1 yr)",
+      "startDate": "2023-11",
+      "endDate": "2024-10",
       "description": "Led global data analytics team for a biotechnology multinational. Tech stack: Snowflake, AWS, GCP, Python, Airflow.",
       "location": "United States · Remote"
     },
@@ -36,7 +40,8 @@
       "id": 5,
       "company": "Banco BRB",
       "role": "Solutions Architect",
-      "duration": "Mar 2023 - Jul 2024 (1 yr 5 mos)",
+      "startDate": "2023-03",
+      "endDate": "2024-07",
       "description": "Led technical initiatives and delivered high-impact solutions as Solutions Architect at Banco BRB. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "Brasília, Federal District, Brazil · Remote"
     },
@@ -44,7 +49,8 @@
       "id": 6,
       "company": "Metatext.AI",
       "role": "Technology Advisor",
-      "duration": "Jan 2024 - Jul 2024 (7 mos)",
+      "startDate": "2024-01",
+      "endDate": "2024-07",
       "description": "Led technical initiatives and delivered high-impact solutions as Technology Advisor at Metatext.AI. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "Brazil · Remote"
     },
@@ -52,7 +58,8 @@
       "id": 7,
       "company": "Carrefour",
       "role": "Lead Data Architect",
-      "duration": "Nov 2022 - Mar 2023 (5 mos)",
+      "startDate": "2022-11",
+      "endDate": "2023-03",
       "description": "Led technical initiatives and delivered high-impact solutions as Lead Data Architect at Carrefour. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil · Remote"
     },
@@ -60,7 +67,8 @@
       "id": 8,
       "company": "Rox Partner",
       "role": "Solutions Architect",
-      "duration": "Apr 2022 - Oct 2022 (7 mos)",
+      "startDate": "2022-04",
+      "endDate": "2022-10",
       "description": "Led technical initiatives and delivered high-impact solutions as Solutions Architect at Rox Partner. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil · Remote"
     },
@@ -68,7 +76,8 @@
       "id": 9,
       "company": "eMotion Studios",
       "role": "Software Engineer",
-      "duration": "May 2022 - Sep 2022 (5 mos)",
+      "startDate": "2022-05",
+      "endDate": "2022-09",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at eMotion Studios. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "Sausalito, California, United States · Remote"
     },
@@ -76,7 +85,8 @@
       "id": 10,
       "company": "will bank",
       "role": "Data Engineer",
-      "duration": "Nov 2021 - Apr 2022 (6 mos)",
+      "startDate": "2021-11",
+      "endDate": "2022-04",
       "description": "Led technical initiatives and delivered high-impact solutions as Data Engineer at will bank. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "Brazil · Remote"
     },
@@ -84,7 +94,8 @@
       "id": 11,
       "company": "Boa Vista",
       "role": "Data Engineer",
-      "duration": "Mar 2020 - Nov 2021 (1 yr 9 mos)",
+      "startDate": "2020-03",
+      "endDate": "2021-11",
       "description": "Led technical initiatives and delivered high-impact solutions as Data Engineer at Boa Vista. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil · Remote"
     },
@@ -92,7 +103,8 @@
       "id": 12,
       "company": "SuperSim",
       "role": "Software Engineer",
-      "duration": "Jul 2019 - Feb 2020 (8 mos)",
+      "startDate": "2019-07",
+      "endDate": "2020-02",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at SuperSim. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil · Remote"
     },
@@ -100,7 +112,8 @@
       "id": 13,
       "company": "Santander Brasil",
       "role": "Software Engineer",
-      "duration": "Jul 2016 - Jul 2019 (3 yrs 1 mo)",
+      "startDate": "2016-07",
+      "endDate": "2019-07",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Santander Brasil. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -108,7 +121,8 @@
       "id": 14,
       "company": "Inmetrics",
       "role": "Software Engineer",
-      "duration": "Jul 2016 - Dec 2016 (6 mos)",
+      "startDate": "2016-07",
+      "endDate": "2016-12",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Inmetrics. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -116,7 +130,8 @@
       "id": 15,
       "company": "Plusoft",
       "role": "Tech Lead",
-      "duration": "Jul 2014 - Jul 2016 (2 yrs 1 mo)",
+      "startDate": "2014-07",
+      "endDate": "2016-07",
       "description": "Led technical initiatives and delivered high-impact solutions as Tech Lead at Plusoft. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -124,7 +139,8 @@
       "id": 16,
       "company": "UniCorp Informática Industrial",
       "role": "Systems Architect",
-      "duration": "Sep 2013 - Aug 2014 (1 yr)",
+      "startDate": "2013-09",
+      "endDate": "2014-08",
       "description": "Led technical initiatives and delivered high-impact solutions as Systems Architect at UniCorp Informática Industrial. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -132,7 +148,8 @@
       "id": 17,
       "company": "Plusoft",
       "role": "Software Engineer",
-      "duration": "Nov 2012 - Sep 2013 (11 mos)",
+      "startDate": "2012-11",
+      "endDate": "2013-09",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Plusoft. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -140,7 +157,8 @@
       "id": 18,
       "company": "Java Developers",
       "role": "Software Engineer",
-      "duration": "Jan 2012 - Dec 2012 (1 yr)",
+      "startDate": "2012-01",
+      "endDate": "2012-12",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at Programadores Java. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -148,7 +166,8 @@
       "id": 19,
       "company": "INSIDE NETWORKS LTD",
       "role": "Software Engineer",
-      "duration": "Jan 2009 - Dec 2011 (3 yrs)",
+      "startDate": "2009-01",
+      "endDate": "2011-12",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at INSIDE NETWORKS LTD. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -156,7 +175,8 @@
       "id": 20,
       "company": "TIM Brasil",
       "role": "Software Engineer",
-      "duration": "Jun 2011 - Dec 2011 (7 mos)",
+      "startDate": "2011-06",
+      "endDate": "2011-12",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at TIM Brasil. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     },
@@ -164,7 +184,8 @@
       "id": 21,
       "company": "H2M Soluções",
       "role": "Software Engineer",
-      "duration": "Dec 2007 - Jan 2009 (1 yr 2 mos)",
+      "startDate": "2007-12",
+      "endDate": "2009-01",
       "description": "Led technical initiatives and delivered high-impact solutions as Software Engineer at H2M Soluções. Focused on driving architectural excellence and engineering best practices within the team.",
       "location": "São Paulo, Brazil"
     }

@@ -96,8 +96,9 @@ export function Header() {
 
           <div className="flex flex-wrap gap-3">
             <a
-              href="/resume.pdf"
-              download="Guilherme_Dio_Resume.pdf"
+              href="https://drive.google.com/uc?export=download&id=1FT8muBUBI73NSCcBJAyw8K2xyFm_PN_e"
+              target="_blank"
+              rel="noopener noreferrer"
               data-track="resume-download"
               className="inline-flex items-center gap-2 px-6 py-[11px] rounded-lg text-sm font-semibold bg-brand text-white hover:bg-[#0d78d8] hover:-translate-y-px transition-all"
               style={{ boxShadow: '0 0 0 transparent' }}

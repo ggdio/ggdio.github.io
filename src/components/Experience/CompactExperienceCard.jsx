@@ -2,19 +2,15 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
+import { formatDuration } from '../../utils/duration';
 
 export function CompactExperienceCard({ experience, isDefaultExpanded = false }) {
   const [isExpanded, setIsExpanded] = useState(isDefaultExpanded);
   const { t } = useLanguage();
 
-  const getTranslatedDuration = (duration) => {
-    if (!duration || !t.date) return duration;
-    let translated = duration;
-    Object.entries(t.date).forEach(([key, value]) => {
-      translated = translated.replace(new RegExp(`\\b${key}\\b`, 'g'), value);
-    });
-    return translated;
-  };
+  const displayDuration = experience.startDate
+    ? formatDuration(experience.startDate, experience.endDate, t)
+    : (experience.duration || experience.period);
 
   const location = experience.location?.split('·')[0].trim() ?? '';
 
@@ -49,7 +45,7 @@ export function CompactExperienceCard({ experience, isDefaultExpanded = false })
             </div>
           </div>
           <span className="shrink-0 text-[12px] text-app-text-dim text-right whitespace-nowrap">
-            {getTranslatedDuration(experience.duration || experience.period)}
+            {displayDuration}
           </span>
         </div>
       </button>

@@ -44,7 +44,6 @@ export function SkillsSection() {
           {Object.entries(skills).map(([category, items], i) => {
             const Icon = ICONS[category];
             const a = ACCENT[category];
-            const isCloud = category === 'cloud';
             return (
               <motion.div
                 key={category}
@@ -52,9 +51,7 @@ export function SkillsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.4, delay: i * 0.05 }}
-                className={`relative overflow-hidden p-6 rounded-[12px] transition-transform hover:-translate-y-0.5 ${
-                  isCloud ? 'card-grad' : 'glass'
-                }`}
+                className="relative overflow-hidden p-6 rounded-[12px] transition-transform hover:-translate-y-0.5 glass"
                 style={{ borderRadius: 'var(--radius-card)' }}
               >
                 <div
