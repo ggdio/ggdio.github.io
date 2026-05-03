@@ -98,6 +98,7 @@ export function Header() {
             <a
               href="/resume.pdf"
               download="Guilherme_Dio_Resume.pdf"
+              data-track="resume-download"
               className="inline-flex items-center gap-2 px-6 py-[11px] rounded-lg text-sm font-semibold bg-brand text-white hover:bg-[#0d78d8] hover:-translate-y-px transition-all"
               style={{ boxShadow: '0 0 0 transparent' }}
               onMouseEnter={(e) => (e.currentTarget.style.boxShadow = '0 0 20px rgba(10,102,194,0.45)')}
@@ -110,6 +111,7 @@ export function Header() {
               href="https://linkedin.com/in/guilhermedio"
               target="_blank"
               rel="noopener noreferrer"
+              data-track="cta-linkedin"
               className="inline-flex items-center gap-2 px-6 py-[11px] rounded-lg text-sm font-semibold border border-app-border-strong text-app-text-muted hover:text-app-text hover:bg-app-glass2 hover:-translate-y-px transition-all"
             >
               LinkedIn →
@@ -145,7 +147,7 @@ export function Header() {
             />
           </div>
           <div
-            className="absolute left-1/2 -translate-x-1/2 -bottom-3.5 flex items-center gap-1.5 px-4 py-1.5 rounded-full backdrop-blur-md whitespace-nowrap"
+            className="absolute left-1/2 -translate-x-1/2 -bottom-3.5 hidden md:flex items-center gap-1.5 px-4 py-1.5 rounded-full backdrop-blur-md whitespace-nowrap"
             style={{
               background: 'rgba(52,211,153,0.12)',
               border: '1px solid rgba(52,211,153,0.35)',

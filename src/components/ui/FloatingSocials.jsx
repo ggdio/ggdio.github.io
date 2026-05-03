@@ -33,26 +33,10 @@ export const WhatsappIcon = ({ size = 24, className = '' }) => (
 );
 
 export const socialLinks = [
-  { 
-    name: 'LinkedIn', 
-    icon: LinkedinIcon, 
-    href: 'https://linkedin.com/in/guilhermedio' 
-  },
-  { 
-    name: 'GitHub', 
-    icon: GithubIcon, 
-    href: 'https://github.com/ggdio' 
-  },
-  { 
-    name: 'Email', 
-    icon: Mail, 
-    href: 'mailto:ggrdio@gmail.com' 
-  },
-  { 
-    name: 'WhatsApp', 
-    icon: WhatsappIcon, 
-    href: 'https://wa.me/5511983216853' 
-  }
+  { name: 'LinkedIn', icon: LinkedinIcon, href: 'https://linkedin.com/in/guilhermedio', track: 'social-linkedin' },
+  { name: 'GitHub',   icon: GithubIcon,   href: 'https://github.com/ggdio',            track: 'social-github'   },
+  { name: 'Email',    icon: Mail,          href: 'mailto:ggrdio@gmail.com',             track: 'social-email'    },
+  { name: 'WhatsApp', icon: WhatsappIcon,  href: 'https://wa.me/5511983216853',         track: 'social-whatsapp' },
 ];
 
 export function FloatingSocials() {
@@ -64,6 +48,7 @@ export function FloatingSocials() {
           href={social.href}
           target="_blank"
           rel="noopener noreferrer"
+          data-track={social.track}
           className="p-3 glass rounded-full text-app-text-muted hover:text-app-text hover:bg-[#0A66C2]/20 hover:scale-110 hover:shadow-[0_0_15px_rgba(10,102,194,0.5)] transition-all duration-300 group relative"
         >
           <social.icon size={20} />

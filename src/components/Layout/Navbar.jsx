@@ -13,11 +13,11 @@ export function Navbar() {
   const { t } = useLanguage();
 
   const links = [
-    { name: t.nav.experience, href: '#experience', id: 'experience' },
-    { name: t.nav.skills, href: '#skills', id: 'skills' },
-    { name: t.nav.github, href: '#github', id: 'github' },
-    { name: t.nav.endorsements, href: '#testimonials', id: 'testimonials' },
-    { name: t.nav.insights, href: '#knowledge-hub', id: 'knowledge-hub' },
+    { name: t.nav.experience, href: '#experience', id: 'experience',    track: 'nav-experience'    },
+    { name: t.nav.skills,     href: '#skills',     id: 'skills',        track: 'nav-skills'        },
+    { name: t.nav.github,     href: '#github',     id: 'github',        track: 'nav-github'        },
+    { name: t.nav.endorsements, href: '#testimonials', id: 'testimonials', track: 'nav-endorsements' },
+    { name: t.nav.insights,   href: '#knowledge-hub', id: 'knowledge-hub', track: 'nav-insights'   },
   ];
 
   useEffect(() => {
@@ -45,6 +45,14 @@ export function Navbar() {
         className="fixed top-0 left-0 right-0 z-[100] h-14 flex items-center px-4 md:px-8 border-b border-app-border backdrop-blur-xl"
         style={{ background: 'color-mix(in oklab, var(--bg-primary) 70%, transparent)' }}
       >
+        <button
+          onClick={() => setIsOpen(true)}
+          className="lg:hidden w-9 h-9 mr-3 rounded-lg border border-app-border bg-app-glass2 text-app-text hover:bg-brand/20 hover:text-brand-light transition flex items-center justify-center shrink-0"
+          aria-label="Open menu"
+        >
+          <Menu size={18} />
+        </button>
+
         <a href="#hero" className="font-display font-extrabold text-xl tracking-tight text-app-text mr-10">
           GD<span className="text-brand">.</span>
         </a>
@@ -54,6 +62,7 @@ export function Navbar() {
             <a
               key={link.id}
               href={link.href}
+              data-track={link.track}
               className={`px-3.5 py-1.5 rounded-md text-[13px] font-normal transition-all ${
                 active === link.id
                   ? 'text-brand-light bg-app-glass2'
@@ -72,13 +81,6 @@ export function Navbar() {
             <ThemeToggle />
           </div>
           <LanguageToggle />
-          <button
-            onClick={() => setIsOpen(true)}
-            className="lg:hidden w-9 h-9 rounded-lg border border-app-border bg-app-glass2 text-app-text hover:bg-brand/20 hover:text-brand-light transition flex items-center justify-center"
-            aria-label="Open menu"
-          >
-            <Menu size={18} />
-          </button>
         </div>
       </header>
 
@@ -97,7 +99,7 @@ export function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'tween', duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-              className="relative w-72 h-full p-7 flex flex-col gap-2 border-r border-app-border"
+              className="relative w-72 h-full p-7 flex flex-col gap-2 border-r border-app-border-strong"
               style={{ background: 'var(--bg-secondary)' }}
             >
               <div className="flex items-center justify-between mb-6">
@@ -106,7 +108,7 @@ export function Navbar() {
                 </span>
                 <button
                   onClick={() => setIsOpen(false)}
-                  className="w-9 h-9 rounded-lg border border-app-border bg-app-glass text-app-text-muted hover:text-app-text flex items-center justify-center"
+                  className="w-9 h-9 rounded-lg border border-app-border-strong bg-app-glass2 text-app-text hover:text-brand-light flex items-center justify-center"
                   aria-label="Close menu"
                 >
                   <X size={18} />
@@ -116,13 +118,14 @@ export function Navbar() {
                 <a
                   key={link.id}
                   href={link.href}
+                  data-track={link.track}
                   onClick={() => setIsOpen(false)}
                   className="px-3.5 py-3 rounded-lg font-display text-lg font-semibold text-app-text-muted hover:text-app-text hover:bg-app-glass2 transition"
                 >
                   {link.name}
                 </a>
               ))}
-              <div className="mt-auto pt-6 border-t border-app-border flex items-center justify-between">
+              <div className="mt-auto pt-6 border-t border-app-border-strong flex items-center justify-between">
                 <LanguageToggle />
                 <ThemeToggle />
               </div>

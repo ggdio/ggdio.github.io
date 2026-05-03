@@ -223,120 +223,120 @@
     {
       "id": 1,
       "name": "Raphael Barbosa",
-      "role": "Engineering Manager @ MadeiraMadeira",
+      "role": "Senior Product / Project Manager | Product Owner | Agile Delivery | Data, Cloud & Analytics",
       "feedback": "Excellent professional, always seeking the best technical solution for the business. Great sense of leadership and commitment to the team.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH17mY_w2_Q0A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 2,
       "name": "Bruno Amaral",
-      "role": "Data Engineer @ Itaú",
+      "role": "Senior Systems Engineer",
       "feedback": "Guilherme is a great professional, with vast technical knowledge and always willing to help and share knowledge with the team.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 3,
       "name": "Marcos Teixeira",
-      "role": "CTO @ Metatext",
+      "role": "CEO & Co-Founder na Rox Partner",
       "feedback": "Guilherme is a high-level professional, with an impressive ability to solve complex problems and a very strong technical background.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 4,
       "name": "Lukercio Lopes",
-      "role": "Tech Lead @ Carrefour",
+      "role": "Head of Data & AI",
       "feedback": "Guilherme is an excellent professional, very technical and always up to date with new technologies. He is a key person in any team.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 5,
       "name": "Thiago Ribeiro",
-      "role": "Software Architect @ Banco BRB",
+      "role": "Member Board | CTO | Strategy and Innovation | IT Leader",
       "feedback": "Guilherme is a very good professional, with a great vision of architecture and a special care for project quality.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 6,
       "name": "Paulo Cardoso",
-      "role": "Solutions Architect @ Rox Partner",
+      "role": "Data Strategy & Governance Leader",
       "feedback": "Guilherme is a great professional, with excellent communication skills and extraordinary technical capacity.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 7,
       "name": "Vinicius Peracini",
-      "role": "Lead Engineer @ will bank",
+      "role": "Senior Data Engineer",
       "feedback": "Guilherme is an excellent engineer, with a very high technical level and a great ability to deliver results under pressure.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 8,
       "name": "Mathias Brem Garcia",
-      "role": "Data Engineer @ Boa Vista",
+      "role": "AI & Data Transformation Leader | AI & Data Literacy",
       "feedback": "Extremely skilled professional, with a broad vision of data and a great technical capacity to implement innovative solutions.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 9,
       "name": "Thiago Ribeiro",
-      "role": "Tech Lead @ SuperSim",
+      "role": "Member Board | CTO | Strategy and Innovation | IT Leader",
       "feedback": "Guilherme is a great engineer, very committed to the success of the project and the team. His technical level is exceptional.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 10,
       "name": "Lincoln Amorim",
-      "role": "Engineering Manager @ Santander",
+      "role": "Technology Director",
       "feedback": "High quality professional, with a very solid technical background and a great deal of proactivity in solving problems.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 11,
       "name": "Felipe Gebara",
-      "role": "Tech Lead @ Santander",
+      "role": "Data Science Engineer",
       "feedback": "Guilherme is very dedicated and professional, always looking to deliver the best result with the highest quality possible.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 12,
       "name": "Lucas Leite",
-      "role": "Tech Lead @ Inmetrics",
+      "role": "IAM Engineer | Tech Lead",
       "feedback": "Great professional, with a lot of potential and a very strong technical background. Always committed to the team's objectives.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/D4D03AQH_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1691152140685?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 13,
       "name": "Hermes Waldemarin Neto",
-      "role": "Principal Backend Software Engineer | Fractional CTO",
-      "feedback": "O Guilherme é um profissional muito talentoso, antenado e está sempre aberto a ajudar. Gosta de aprender coisas novas, sempre trás novas ideias e é comprometido com a equipe que está trabalhando. Se destacou em todos os times que trabalhou aqui na Empresa.",
+      "role": "Principal Software Engineer | CTO",
+      "feedback": "Guilherme is a very talented and up-to-date professional who is always open to helping others. He likes to learn new things, always brings new ideas, and is committed to the team he is working with. He stood out in every team he worked with here at the Company.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/C5603AQES8J-Yf7q9JQ/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 14,
       "name": "Felipe Takano",
-      "role": "Consultor SAP SD NFe | S/4Hana | SAP Retail",
-      "feedback": "Guilherme foi determinado, pró ativo, dinâmico, e comprometido com seu trabalho. Buscava sempre outras fontes de experiências para atingir melhores resultados.Com essa vivência, adquiriu sólidos conhecimentos para se tornar um profissional competente.",
+      "role": "Consultor SAP",
+      "feedback": "Guilherme was determined, proactive, dynamic, and committed to his work. He always sought other sources of experience to achieve better results. Through this experience, he acquired solid knowledge to become a competent professional.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQF_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 15,
       "name": "Alan Cezar",
       "role": "Principal Software Engineer",
-      "feedback": "O Guilherme é um excelente profissional que buscando sempre aprender mais estando em constante evolução técnica e profissional. Faz as coisas com muito apreço, tem um ótimo senso crítico para questões técnicas e gosta de compartilhar seus conhecimentos e experiência com os demais colegas.",
+      "feedback": "Guilherme is an excellent professional who is always looking to learn more and is in constant technical and professional evolution. He does things with great care, has a great critical sense for technical issues, and likes to share his knowledge and experience with his colleagues.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQE_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 16,
       "name": "Nilson Saito",
       "role": "Professor",
-      "feedback": "O Guilherme é um rapaz muito dedicado, esforçado e inteligente. Ótimo para trabalhos individuais e de pesquisas.",
+      "feedback": "Guilherme is a very dedicated, hardworking, and intelligent guy. Great for individual and research work.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQE_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     },
     {
       "id": 17,
       "name": "Raphael Caldeirão",
-      "role": "Product Manager | Data-Driven | Segurança da Informação",
-      "feedback": "Profissional extremamente comprometido com suas atividades. Todas as entregas com muita qualidade.",
+      "role": "Product Manager",
+      "feedback": "An extremely committed professional in his activities. All deliveries are of high quality.",
       "avatarUrl": "https://media.licdn.com/dms/image/v2/C4D03AQE_7y_y_y_y_y_y/profile-displayphoto-shrink_100_100/0/1572355555555?e=1718236800&v=beta&t=4G_R4n6E9m3fU6v1q0Y6uT7sZ5Y5B4_R4G_R4n6E9m3"
     }
   ]

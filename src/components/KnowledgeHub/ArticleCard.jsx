@@ -36,7 +36,11 @@ export function ArticleCard({ article }) {
         </p>
         
         <div className="mt-auto">
-          <ExternalLinkButton href={article.url} className="justify-center w-full">
+          <ExternalLinkButton
+            href={article.url}
+            className="justify-center w-full"
+            data-track={`article-${new URL(article.url).pathname.replace(/^\/pulse\/|\/$/g, '')}`}
+          >
             Read on LinkedIn
           </ExternalLinkButton>
         </div>

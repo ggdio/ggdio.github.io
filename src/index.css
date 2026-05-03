@@ -55,13 +55,14 @@
     color-scheme: light;
   }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
 
   body {
     @apply bg-app-bg text-app-text-muted font-sans selection:bg-brand/30 antialiased;
     margin: 0;
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, .font-display {

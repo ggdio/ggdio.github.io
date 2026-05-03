@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { LanguageProvider } from './hooks/LanguageProvider';
 import { useLanguage } from './hooks/useLanguage';
 import { Header } from './components/Layout/Header';
@@ -11,6 +12,16 @@ import { GitHubSection } from './components/GitHub/GitHubSection';
 
 function AppContent() {
   const { t } = useLanguage();
+
+  useEffect(() => {
+    const handleClick = (e) => {
+      const el = e.target.closest('[data-track]');
+      if (!el) return;
+      window.goatcounter?.count({ path: el.dataset.track, event: true });
+    };
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
+  }, []);
 
   return (
     <div className="min-h-screen relative bg-app-bg text-app-text-muted font-sans antialiased">
@@ -31,6 +42,14 @@ function AppContent() {
         style={{ background: 'var(--bg-primary)' }}
       >
         <p>© {new Date().getFullYear()} Guilherme Dio. {t.footer}</p>
+        <a
+          href="https://ggdio.goatcounter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 inline-block text-[11px] text-app-text-dim opacity-30 hover:opacity-60 transition-opacity"
+        >
+          analytics
+        </a>
       </footer>
     </div>
   );
